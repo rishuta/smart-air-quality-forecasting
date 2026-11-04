@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+data/raw/*
+!data/raw/README.md
+!data/raw/manifest.json
+*.zip
+.DS_Store
+Thumbs.db

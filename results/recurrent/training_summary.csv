@@ -1,0 +1,13 @@
+model,input_scale,forecast_scale,train_samples,validation_samples,early_training_samples,test_periods,selected_epochs
+LSTM,hourly,daily,1448,365,1080,243,24
+GRU,hourly,daily,1448,365,1080,243,39
+LSTM,daily,daily,337,92,245,243,25
+GRU,daily,daily,337,92,245,243,58
+LSTM,daily,weekly,331,86,239,34,25
+GRU,daily,weekly,331,86,239,34,15
+LSTM,weekly,weekly,43,12,30,34,60
+GRU,weekly,weekly,43,12,30,34,60
+LSTM,weekly,monthly,40,9,27,8,1
+GRU,weekly,monthly,40,9,27,8,57
+LSTM,monthly,monthly,9,3,6,8,1
+GRU,monthly,monthly,9,3,6,8,1

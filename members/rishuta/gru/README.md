@@ -1,5 +1,5 @@
 # GRU
 
-Open `GRU_Report.pdf` for the explanation, results and graphs.
+[Results report](GRU_Report.pdf)
 
-Run from the repository root: `python members/rishuta/gru/train.py`. Raw outputs and trained weights are in `results/`.
+Daily, weekly and monthly concentration forecasts for 11 pollutants. Training: 2025. Testing: January to August 2026. The report includes MAE, RMSE and forecast graphs; prediction tables and trained weights are retained in `results/`.

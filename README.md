@@ -1,39 +1,26 @@
 # Multi-Pollutant Time-Series Forecasting and Air Quality Index Classification for Smart Air Quality Monitoring
 
-We are currently training individual base models.
+This project studies pollutant concentration forecasts for Anand Vihar, Delhi, and their use in smart air-quality monitoring. The current evaluation compares daily, weekly and monthly concentration forecasts.
 
-| Member | Model 1 | Model 2 | Work folder |
-|---|---|---|---|
-| Hari | Persistence | SARIMA | [Hari](members/hari) |
-| Rishi | Random Forest | XGBoost | [Rishi](members/rishi) |
-| Rishuta | LSTM | GRU | [Rishuta](members/rishuta) |
-| Akash | Patch TCN | Patch TST | [Akash](members/aakash) |
+## Team and models
 
-Each member has **three folders**: two for models and one called `comparison` for results and graphs. Keep your work in your own folders.
+| Member | Models |
+|---|---|
+| Hari | Persistence and SARIMA |
+| Rishi | Random Forest and XGBoost |
+| Rishuta | LSTM and GRU |
+| Akash | Patch TCN and Patch TST |
 
-## Data
+## Dataset and evaluation
 
-Place the supplied combined 11-pollutant CSV in [data](data). The source file stays local; obtain it from the team. Train on **2025** and test on **2026**. Do not train or choose settings using test data.
+The dataset contains **14,592 hourly observations and 11 pollutants**, covering January 2025 to August 2026. Models train and validate on **2025** and test on **2026**.
 
-## Run LSTM and GRU
+Daily, weekly and monthly predictions are evaluated using **MAE**, **RMSE** and the signed error **predicted minus actual**. Each observed period average requires at least 75% hourly coverage. Monthly findings are exploratory because only one training year is available.
 
-Use Python 3.11. Create and activate a virtual environment, then run from this repository:
+## Results
 
-```bash
-python -m pip install -r members/rishuta/requirements.txt
-python members/rishuta/lstm/train.py
-python members/rishuta/gru/train.py
-python members/rishuta/make_reports.py
-```
+- [LSTM report](members/rishuta/lstm/LSTM_Report.pdf)
+- [GRU report](members/rishuta/gru/GRU_Report.pdf)
+- [LSTM and GRU comparison](members/rishuta/comparison/Comparison_Report.pdf)
 
-Each model uses the same dataset and predicts pollutant averages for days, weeks and months. MAE and RMSE show the errors; lower is better. Monthly results are exploratory because there is only one training year.
-
-## Add your work
-
-Add code and results inside your own member folder. Make a branch, commit your changes and open a pull request for a teammate to review.
-
-AQI classification and deployment are pending.
-
-## Reports
-
-Each model folder contains its report. The `comparison` folder holds one combined report. Other members' folders are ready for their own work.
+The reports contain concentration forecasts, error tables and comparison graphs for all 11 pollutants. LSTM and GRU results are available; other team models have not yet been submitted to this repository. AQI classification and prototype deployment are future stages.

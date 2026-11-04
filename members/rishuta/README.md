@@ -1,9 +1,9 @@
-# Rishuta
+# Recurrent neural network models
 
-- `lstm/LSTM_Report.pdf`: LSTM results and graphs.
-- `gru/GRU_Report.pdf`: GRU results and graphs.
-- `comparison/Comparison_Report.pdf`: both models compared.
+**Contributor:** Rishuta Sheel
 
-Each model's `results/predictions_2026.csv` includes actual, predicted and error for every forecast. Error = predicted - actual. Missing actuals have blank errors.
+- [LSTM results](lstm/LSTM_Report.pdf)
+- [GRU results](gru/GRU_Report.pdf)
+- [Model comparison](comparison/Comparison_Report.pdf)
 
-Shared training: `train_models.py`. Rebuild reports: `make_reports.py`.
+Both models forecast 11 pollutants at daily, weekly and monthly scales using 2025 training data and 2026 test data. Prediction tables include actual values, predicted values and signed errors.

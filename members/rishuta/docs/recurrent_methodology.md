@@ -40,7 +40,7 @@ Errors retain source concentration units: CO uses mg/m³; the other targets use 
 Install `numpy pandas torch` in Python, then run:
 
 ```powershell
-python models/recurrent/train.py --data-dir "data/raw" --output-dir results
+python members/rishuta/models/recurrent/train.py --data-dir "data/raw" --output-dir results
 ```
 
 ## Interpretation limits

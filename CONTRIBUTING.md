@@ -2,7 +2,7 @@
 
 1. Accept your invitation and clone the repository using your own GitHub account.
 2. Create a branch such as `models/yourname-modelname`.
-3. Copy `models/_template` to `models/your_model_name`.
+3. Use your own `members/<name>/` workspace. Copy the root `templates/` model card into each model subfolder.
 4. Add code/notebooks, dependencies, a model card, results and reproduction commands. Use configurable paths. Do not overwrite another person's model folder.
 5. Train and validate on 2025. Keep 2026 for final testing. Explain preprocessing, missing data, lookback and forecast horizon. Compare approaches only on matching targets and test periods.
 6. Commit meaningful work with clear messages using your own Git identity. Never invent or backdate contributions.
@@ -13,4 +13,6 @@ Report per-pollutant MAE and RMSE in original units, scored counts and actual/pr
 
 ## Upload through the browser
 
-After accepting the invitation, open your model folder, choose **Add file > Upload files**, upload your files to a new branch and open a pull request. Each member must use their own account for attribution.
+After accepting the invitation, open your own member/model folder, choose **Add file > Upload files**, upload your files to a new branch and open a pull request. Each member must use their own account for attribution.
+
+All individual implementation, notebooks, model dependencies and results must stay in their owner's member workspace. Shared data instructions and team-level documentation remain at the root. Aakash's model assignment is pending.

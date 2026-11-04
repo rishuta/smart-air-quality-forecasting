@@ -111,7 +111,7 @@ def preprocess(x,y,idx):
     return (filled-mean)/std,target,mask,dict(median=med.tolist(),mean=mean.tolist(),std=std.tolist(),target_mean=ym.tolist(),target_std=ys.tolist())
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--data-dir',default=str(Path(__file__).resolve().parents[2]/'data'/'raw'));ap.add_argument('--output-dir',default=str(Path(__file__).parent/'results'));ap.add_argument('--epochs',type=int,default=60);ap.add_argument('--model',choices=['LSTM','GRU','both'],default='both')
+    ap=argparse.ArgumentParser();ap.add_argument('--data-dir',default=str(Path(__file__).resolve().parents[4]/'data'/'raw'));ap.add_argument('--output-dir',default=str(Path(__file__).parent/'results'));ap.add_argument('--epochs',type=int,default=60);ap.add_argument('--model',choices=['LSTM','GRU','both'],default='both')
     args=ap.parse_args();out=Path(args.output_dir);out.mkdir(parents=True,exist_ok=True)
     torch.set_num_threads(4);np.random.seed(42);random.seed(42)
     p=Path(args.data_dir);a=load(next(p.glob('Cleaned_2025_*.csv')));b=load(next(p.glob('Cleaned_2026_*.csv')))

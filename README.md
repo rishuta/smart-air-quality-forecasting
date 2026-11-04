@@ -30,10 +30,10 @@ Each model uses the same dataset and predicts pollutant averages for days, weeks
 
 ## Add your work
 
-Use your own GitHub account. Make a branch, add files inside your folder, commit, push and open a pull request. Ask a teammate to review it. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Add code and results inside your own member folder. Make a branch, commit your changes and open a pull request for a teammate to review.
 
-AQI classification and deployment are pending. Existing work was imported as a current snapshot; future commits should record real progress.
+AQI classification and deployment are pending.
 
 ## Reports
 
-Open Rishuta's LSTM and GRU PDFs in their model folders. Her comparison folder contains only one PDF report with all comparison tables and graphs. Other members' model and comparison folders are empty for their own contributions. `.gitkeep` only preserves empty folders in Git.
+Each model folder contains its report. The `comparison` folder holds one combined report. Other members' folders are ready for their own work.

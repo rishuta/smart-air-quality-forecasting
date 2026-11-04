@@ -1,8 +1,7 @@
-# Hari - base model workspace
+# Hari
 
-Status: awaiting contributor files. No training or validation is claimed by this repository.
+- `model_1_persistence/`: Persistence
+- `model_2_sarima/`: SARIMA
+- `comparison/`: comparison code, results and graphs.
 
-- Model 1: Persistence (Naive Forecast) (`model_1_persistence/`)
-- Model 2: SARIMA (`model_2_sarima/`)
-
-Keep your code, notebooks, dependency list, model documentation and results inside this workspace. Use your own branch and GitHub account. See the root CONTRIBUTING.md and templates/README.md.
+Keep all your work inside these three folders.

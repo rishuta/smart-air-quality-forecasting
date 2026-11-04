@@ -1,11 +1,10 @@
 # Project diary
 
-Use actual dates, individual names and evidence links. Keep guide approvals and meeting records. A diary entry alone does not establish guide approval.
-
-| Date | Contributor | Activity | Evidence | Guide feedback / next step |
+| Date | Member | Work | Evidence | Next step |
 |---|---|---|---|---|
-| 2026-11-04 | Rishuta Sheel | Imported completed LSTM/GRU experiments and created shared repository | members/rishuta/models/lstm, members/rishuta/models/gru, members/rishuta/docs/recurrent_results.md | Guide review pending |
+| 2026-11-04 | Rishuta | Created shared repository and imported LSTM/GRU experiments | Git history | Guide review |
+| 2026-11-04 | Rishuta | Separated each member into two model folders and one comparison folder; retrained on supplied combined 11-pollutant dataset; added graphs | members/rishuta/comparison | Teammates add their models |
 
-This entry records the import; it does not establish earlier development dates. Add a row after meaningful work or guide meetings.
+Add real updates with commit or result links. Guide approval is not implied by an entry.
 
-| 2026-11-04 | Rishuta Sheel | Separated member workspaces; recorded Hari/Rishi assignments and reserved Aakash workspace | members/, README.md | Teammate usernames and files pending |
+| 2026-11-04 | Rishuta | Recorded Akash assignments: Patch TCN and Patch TST | members/aakash | Await model files |

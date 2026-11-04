@@ -12,3 +12,6 @@ data/raw/*
 *.zip
 .DS_Store
 Thumbs.db
+
+# Keep source datasets local.
+data/*.csv

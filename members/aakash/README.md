@@ -1,7 +1,7 @@
-# Aakash - base model workspace
+# Akash
 
-Status: awaiting contributor files. No training or validation is claimed by this repository.
+- `patch_tcn/`: Patch TCN.
+- `patch_tst/`: Patch TST.
+- `comparison/`: comparison code, results and graphs.
 
-Model assignment has not yet been specified. Add your base models here.
-
-Keep your code, notebooks, dependency list, model documentation and results inside this workspace. Use your own branch and GitHub account. See the root CONTRIBUTING.md and templates/README.md.
+Keep all your work inside these three folders. Model files and results are awaiting upload.

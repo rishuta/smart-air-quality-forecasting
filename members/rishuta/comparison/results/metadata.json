@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "coverage_threshold": 0.75,
+  "train_year": 2025,
+  "test_year": 2026,
+  "shared_columns": [
+    "PM2.5",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "SO2",
+    "CO",
+    "Ozone",
+    "Benzene",
+    "Toluene"
+  ],
+  "targets": [
+    "PM2.5",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "SO2",
+    "CO",
+    "Ozone",
+    "Benzene",
+    "Toluene"
+  ],
+  "train_rows": 8760,
+  "test_rows": 5832,
+  "epochs_max": 60
+}

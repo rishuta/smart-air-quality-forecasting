@@ -65,7 +65,6 @@ def examples(raw, cols, period, base, hours, lookback, horizon):
     origins = origins[origins < pd.Timestamp('2026-01-01')].union(tests)
     xs = []
     ys = []
-    masks = []
     weights = []
     dates = []
     ends = []
@@ -216,14 +215,15 @@ def main():
                 err = agg[ok, j] - observed[ok]
                 rows.append(dict(model=kind, input_scale=base, forecast_scale=period, pollutant=t, n_test=int(ok.sum()), MAE=float(np.mean(abs(err))), RMSE=float(np.sqrt(np.mean(err ** 2)))))
                 for k, i in enumerate(testidx):
-                    predrows.append(dict(model=kind, input_scale=base, forecast_scale=period, period_start=str(dates[i]), period_end_exclusive=str(ends[i]), pollutant=t, actual=actual[i, j], predicted=agg[k, j]))
+                    predrows.append(dict(model=kind, input_scale=base, forecast_scale=period, period_start=str(dates[i]), period_end_exclusive=str(ends[i]), pollutant=t, actual=actual[i, j], predicted=agg[k, j], error=agg[k, j] - actual[i, j]))
             log = dict(model=kind, input_scale=base, forecast_scale=period, train_samples=len(trainidx), validation_samples=len(validx), early_training_samples=len(earlyidx), test_periods=len(testidx), selected_epochs=epochs)
             logs.append(log)
             print(json.dumps(log), flush=True)
     metrics = pd.DataFrame(rows)
-    metrics.to_csv(out / 'error_comparison.csv', index=False)
-    pd.DataFrame(predrows).to_csv(out / 'predictions_2026.csv', index=False)
-    pd.DataFrame(logs).to_csv(out / 'training_summary.csv', index=False)
+    for filename, frame in [('error_comparison.csv', metrics), ('predictions_2026.csv', pd.DataFrame(predrows)), ('training_summary.csv', pd.DataFrame(logs))]:
+        if args.model != 'both':
+            frame = frame.drop(columns='model')
+        frame.to_csv(out / filename, index=False)
     for freq, name in [('D', 'daily'), ('W-MON', 'weekly'), ('MS', 'monthly')]:
         grouped = raw[cols].resample(freq, label='left', closed='left')
         grouped.mean().to_csv(out / f'observed_{name}_means.csv')

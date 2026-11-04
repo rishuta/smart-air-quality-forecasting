@@ -2,8 +2,8 @@
 
 - `lstm/LSTM_Report.pdf`: LSTM results and graphs.
 - `gru/GRU_Report.pdf`: GRU results and graphs.
-- `comparison/Comparison_Report.pdf`: both models compared in one file.
+- `comparison/Comparison_Report.pdf`: both models compared.
 
-`train_models.py` contains the shared training code. `make_reports.py` regenerates the three reports from model results.
+Each model's `results/predictions_2026.csv` includes actual, predicted and error for every forecast. Error = predicted - actual. Missing actuals have blank errors.
 
-Run `python members/rishuta/make_reports.py` from the repository root after installing this member's requirements.
+Shared training: `train_models.py`. Rebuild reports: `make_reports.py`.

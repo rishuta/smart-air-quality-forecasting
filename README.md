@@ -23,7 +23,7 @@ Use Python 3.11. Create and activate a virtual environment, then run from this r
 python -m pip install -r members/rishuta/requirements.txt
 python members/rishuta/lstm/train.py
 python members/rishuta/gru/train.py
-python members/rishuta/comparison/compare.py
+python members/rishuta/make_reports.py
 ```
 
 Each model uses the same dataset and predicts pollutant averages for days, weeks and months. MAE and RMSE show the errors; lower is better. Monthly results are exploratory because there is only one training year.
@@ -33,3 +33,7 @@ Each model uses the same dataset and predicts pollutant averages for days, weeks
 Use your own GitHub account. Make a branch, add files inside your folder, commit, push and open a pull request. Ask a teammate to review it. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 AQI classification and deployment are pending. Existing work was imported as a current snapshot; future commits should record real progress.
+
+## Reports
+
+Open Rishuta's LSTM and GRU PDFs in their model folders. Her comparison folder contains only one PDF report with all comparison tables and graphs. Other members' model and comparison folders are empty for their own contributions. `.gitkeep` only preserves empty folders in Git.

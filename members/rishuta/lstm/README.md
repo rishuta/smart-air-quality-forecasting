@@ -1,11 +1,5 @@
 # LSTM
 
-Owner: Rishuta.
+Open `LSTM_Report.pdf` for the explanation, results and graphs.
 
-From the repository root, run:
-
-```bash
-python members/rishuta/lstm/train.py
-```
-
-Weights, predictions and errors are saved in `results/`. The shared training code is in `../comparison/train_models.py`.
+Run from the repository root: `python members/rishuta/lstm/train.py`. Raw outputs and trained weights are in `results/`.

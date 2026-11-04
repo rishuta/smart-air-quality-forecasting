@@ -168,7 +168,7 @@ def preprocess(x, y, idx):
 def main():
     """Train on 2025, test on 2026 and save predictions, errors and weights."""
     ap = argparse.ArgumentParser()
-    ap.add_argument('--data-file', default=str(Path(__file__).resolve().parents[3] / 'data' / 'Delhi_AnandVihar_2025_Aug2026_11pollutants_combined_unimputed.csv'))
+    ap.add_argument('--data-file', default=str(Path(__file__).resolve().parents[2] / 'data' / 'Delhi_AnandVihar_2025_Aug2026_11pollutants_combined_unimputed.csv'))
     ap.add_argument('--output-dir', default=str(Path(__file__).parent / 'results'))
     ap.add_argument('--epochs', type=int, default=60)
     ap.add_argument('--model', choices=['LSTM', 'GRU', 'both'], default='both')

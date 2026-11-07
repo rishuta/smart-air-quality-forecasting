@@ -1,0 +1,94 @@
+{
+  "target": "PM2.5 (\u00b5g/m\u00b3)",
+  "horizon_hours": 1,
+  "seed": 42,
+  "data_sha256": "ab6976bfd2752e29e3302bc13c7870289c91472b840bd6286ea26c7df7bb0798",
+  "input_rows": 14592,
+  "start": "2025-01-01 00:00:00",
+  "end": "2026-08-31 23:00:00",
+  "missing_by_column": {
+    "PM2.5 (\u00b5g/m\u00b3)": 941,
+    "PM10 (\u00b5g/m\u00b3)": 961,
+    "NO (\u00b5g/m\u00b3)": 893,
+    "NO2 (\u00b5g/m\u00b3)": 734,
+    "NOx (ppb)": 716,
+    "NH3 (\u00b5g/m\u00b3)": 681,
+    "SO2 (\u00b5g/m\u00b3)": 1312,
+    "CO (mg/m\u00b3)": 715,
+    "Ozone (\u00b5g/m\u00b3)": 986,
+    "Benzene (\u00b5g/m\u00b3)": 873,
+    "Toluene (\u00b5g/m\u00b3)": 873
+  },
+  "feature_columns": [
+    "PM2.5 (\u00b5g/m\u00b3)",
+    "PM10 (\u00b5g/m\u00b3)",
+    "NO (\u00b5g/m\u00b3)",
+    "NO2 (\u00b5g/m\u00b3)",
+    "NOx (ppb)",
+    "NH3 (\u00b5g/m\u00b3)",
+    "SO2 (\u00b5g/m\u00b3)",
+    "CO (mg/m\u00b3)",
+    "Ozone (\u00b5g/m\u00b3)",
+    "Benzene (\u00b5g/m\u00b3)",
+    "Toluene (\u00b5g/m\u00b3)",
+    "pm25_lag_1h",
+    "pm25_lag_2h",
+    "pm25_lag_3h",
+    "pm25_lag_24h",
+    "pm25_lag_168h",
+    "pm25_mean_3h",
+    "pm25_std_3h",
+    "pm25_mean_24h",
+    "pm25_std_24h",
+    "pm25_mean_168h",
+    "pm25_std_168h",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "year_day_sin",
+    "year_day_cos"
+  ],
+  "splits": {
+    "train": {
+      "n": 9572,
+      "issue_start": "2025-01-01 00:00:00",
+      "issue_end": "2026-03-02 12:00:00",
+      "target_end": "2026-03-02 13:00:00"
+    },
+    "validation": {
+      "n": 2026,
+      "issue_start": "2026-03-02 14:00:00",
+      "issue_end": "2026-06-01 16:00:00",
+      "target_end": "2026-06-01 17:00:00"
+    },
+    "test": {
+      "n": 2050,
+      "issue_start": "2026-06-01 19:00:00",
+      "issue_end": "2026-08-31 22:00:00",
+      "target_end": "2026-08-31 23:00:00"
+    }
+  },
+  "selected_parameters": {
+    "model_3_random_forest": {
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "max_features": 0.8
+    },
+    "model_4_xgboost": {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 10
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1"
+  }
+}

@@ -1,0 +1,50 @@
+,importance
+PM2.5 (µg/m³),0.560491
+pm25_mean_3h,0.16346134
+pm25_mean_24h,0.024048677
+missingindicator_PM2.5 (µg/m³),0.017828902
+Benzene (µg/m³),0.01663537
+year_day_cos,0.014664989
+missingindicator_PM10 (µg/m³),0.014434908
+pm25_mean_168h,0.013617505
+CO (mg/m³),0.010824604
+missingindicator_pm25_std_3h,0.009835306
+hour_cos,0.0097937705
+PM10 (µg/m³),0.009669463
+NOx (ppb),0.009115776
+missingindicator_SO2 (µg/m³),0.008693407
+missingindicator_pm25_lag_1h,0.008053925
+Toluene (µg/m³),0.0069313357
+hour_sin,0.006916951
+year_day_sin,0.0057979478
+missingindicator_pm25_mean_3h,0.005618534
+NO (µg/m³),0.005083564
+pm25_lag_168h,0.0048387246
+pm25_lag_3h,0.004640135
+pm25_lag_1h,0.004454537
+NO2 (µg/m³),0.0042280057
+missingindicator_CO (mg/m³),0.00414887
+Ozone (µg/m³),0.0040656417
+missingindicator_NOx (ppb),0.0040421537
+pm25_std_168h,0.0037520954
+pm25_lag_2h,0.0036641154
+pm25_std_24h,0.0036541005
+missingindicator_pm25_lag_24h,0.0036486832
+pm25_lag_24h,0.0035881517
+missingindicator_pm25_lag_2h,0.0035071003
+pm25_std_3h,0.0034036573
+NH3 (µg/m³),0.0030749536
+SO2 (µg/m³),0.0028719748
+missingindicator_pm25_lag_3h,0.002827573
+missingindicator_Benzene (µg/m³),0.00261145
+weekday_cos,0.0026096678
+missingindicator_Toluene (µg/m³),0.0024129867
+weekday_sin,0.0023002846
+missingindicator_Ozone (µg/m³),0.0017938532
+missingindicator_pm25_lag_168h,0.0015458206
+missingindicator_pm25_mean_24h,0.00079823553
+missingindicator_NH3 (µg/m³),0.0
+missingindicator_NO2 (µg/m³),0.0
+missingindicator_NO (µg/m³),0.0
+missingindicator_pm25_std_24h,0.0
+missingindicator_pm25_std_168h,0.0

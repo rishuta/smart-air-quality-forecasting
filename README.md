@@ -22,5 +22,6 @@ Daily, weekly and monthly predictions are evaluated using **MAE**, **RMSE** and 
 - [LSTM report](members/rishuta/lstm/LSTM_Report.pdf)
 - [GRU report](members/rishuta/gru/GRU_Report.pdf)
 - [LSTM and GRU comparison](members/rishuta/comparison/Comparison_Report.pdf)
+- [Rishi: Random Forest and XGBoost](rishi/README.md) — previously trained one-hour-ahead PM2.5 models, with a separate 70/15/15 chronological evaluation. These scores are not directly comparable with the shared daily/weekly/monthly protocol above.
 
-The reports contain concentration forecasts, error tables and comparison graphs for all 11 pollutants. LSTM and GRU results are available; other team models have not yet been submitted to this repository. AQI classification and prototype deployment are future stages.
+The LSTM and GRU reports contain concentration forecasts, error tables and comparison graphs for all 11 pollutants. Rishi's separate hourly PM2.5 submission is also available. The remaining team models have not yet been submitted to this repository. AQI classification and prototype deployment are future stages.
